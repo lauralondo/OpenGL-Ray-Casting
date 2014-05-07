@@ -19,4 +19,4 @@ that is defined by the command line arguments.
 1.3  1  0.6  1.0  2.2  0.5  1  0  
 
 
-![Depth](https://raw.githubusercontent.com/lauralondo/OpenGL-Ray-Casting/master/hemisphere.png)
+![Depth](https://raw.githubusercontent.com/lauralondo/OpenGL-Ray-Casting/master/hemisphere.PNG)

@@ -5,7 +5,7 @@ Ray casting of a shaded hemisphere in OpenGL. Uses one diffuse light
 that is defined by the command line arguments.  
 
 
-####Command-line Arguments:   
+####Command-line Arguments:
 - radius,   
 - 0 or 1 for top or bottom hemisphere,   
 - x position of the light,   
@@ -16,4 +16,4 @@ that is defined by the command line arguments.
 - blue color value of the light   
 
 ######Default values:   
-1.3  1  0.6  1.0  2.2  0.5  1  0\n\n");
+1.3  1  0.6  1.0  2.2  0.5  1  0

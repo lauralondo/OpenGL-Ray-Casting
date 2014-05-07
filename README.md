@@ -16,4 +16,7 @@ that is defined by the command line arguments.
 - blue color value of the light   
 
 ######Default values:   
-1.3  1  0.6  1.0  2.2  0.5  1  0
+1.3  1  0.6  1.0  2.2  0.5  1  0  
+
+
+![Depth](https://raw.githubusercontent.com/lauralondo/OpenGL-Ray-Casting/master/hemisphere.png)

@@ -17,8 +17,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define screenWidth 700.0	//initial screem width
-#define screenHeight 700.0	//initial screen height
+#define screenWidth 700.0   //initial screem width
+#define screenHeight 700.0  //initial screen height
 #define orthoXMin -2.0      //minimum orthographic x dimention
 #define orthoXMax  2.0      //maximum orthographic x dimention
 #define orthoYMin -2.0      //minimum orthographic y dimention
@@ -81,8 +81,8 @@ void getParameters(int argc, char *argv[]) {
 // display callback. Uses ray casting to render a shaded hemisphere
 void display(void) {
 
-	for(int winY=0; winY < screenHeight; winY++) {   //each row in the window
-		for(int winX=0; winX < screenWidth; winX++) {//each column in the window
+	for(int winY=0; winY < screenHeight; winY++) {        //each row in the window
+		for(int winX=0; winX < screenWidth; winX++) { //each column in the window
 
 			//equation of the eye
 			float eyeX = 0;
@@ -167,8 +167,8 @@ void display(void) {
 
 			//get the magnitude of the vector
 			float lightNormMag = sqrt(lightNormX*lightNormX
-									  + lightNormY*lightNormY
-									  + lightNormZ*lightNormZ);
+                                                  + lightNormY*lightNormY
+				                  + lightNormZ*lightNormZ);
 
 			//normalize the light vector
 			lightNormX = lightNormX/lightNormMag;
@@ -180,8 +180,8 @@ void display(void) {
 
 			//for attenuation, use the square of the distance
 			float atten = (interX-lightX)*(interX-lightX)
-						+ (interY-lightY)*(interY-lightY)
-						+ (interZ-lightZ)*(interZ-lightZ);
+				       + (interY-lightY)*(interY-lightY)
+			               + (interZ-lightZ)*(interZ-lightZ);
 
 			//compute the illumination
 			float ldR = kd * lightR * dot / atten;
@@ -197,13 +197,16 @@ void display(void) {
 	} //end for row
 
 	glutSwapBuffers();
-}
+} //end display
+
+
 
 //keyboard callback
 void keyboard(unsigned char key, int x, int y) {
    	if((int)key == 27) 	//exit program
    		exit(0);
 } //end keyboard
+
 
 
 //main method
